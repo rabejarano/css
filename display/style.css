@@ -1,0 +1,66 @@
+#primer {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  padding: 10px;
+  border: 10px solid purple;
+  box-sizing: content-box;
+}
+
+#segundo {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  padding: 10px;
+  border: 10px solid purple;
+  box-sizing: content-box;
+  font-size: 32px;
+  /* overflow: visible; */
+  /* overflow: hidden; */
+  /* overflow:hidden; */
+  /* text-overflow: ellipsis; */
+  /* text-overflow: clip; */
+}
+
+/* css is AWeSOME */
+
+#tercero {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border: 10px solid purple;
+  box-sizing: content-box;
+  font-size: 32px;
+  position: relative;
+}
+
+#child {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: sticky;
+  top: 0;
+  right: 0;
+  /* inset: 0;
+  margin: auto; */
+}
+
+#cuarto {
+  position: relative;
+}
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+#cuarto > h1 {
+  position: absolute;
+  z-index: 2;
+}
+
+#cuarto > p {
+  position: absolute;
+  z-index: 2;
+}

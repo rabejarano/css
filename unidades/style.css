@@ -1,0 +1,49 @@
+html {
+  font-size: 16px;
+}
+
+div {
+  font-size: 3rem;
+  border: 1px solid black;
+}
+
+#rem-div {
+  font-size: 2rem;
+  border: 1px solid red;
+}
+
+#rem {
+  font-size: 30px;
+}
+
+span {
+  font-size: 0.5em;
+}
+
+/* rem	Relative to font-size of the root element */
+/* em	Relative to the font-size of the element (2em means 2 times the size of the current font)	 */
+
+#box {
+  width: 250px;
+  height: 250px;
+  background: red;
+}
+
+#box2 {
+  width: 50%;
+  height: 50%;
+  background-color: black;
+}
+
+
+#boxV {
+    width: 100vh;
+    height: 100vw;
+    background: purple;
+  }
+  
+  #boxV2 {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+  }

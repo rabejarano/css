@@ -1,0 +1,127 @@
+/* selector {
+  propiedad: valor;
+} */
+
+h1 {
+  color: blue;
+  border-style: solid;
+  border-width: 1px;
+  border-color: currentColor;
+}
+
+/* fallbacks
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: monospace;
+} */
+
+.link {
+  color: red;
+}
+
+#identificador {
+  color: yellow;
+}
+
+.container {
+  color: orange;
+  font-size: 24px;
+  border: 3px solid black;
+}
+
+.child {
+  border: inherit;
+  /* border: initial: Establece el borde al valor inicial.
+    border: unset: Elimina el borde por completo.
+    border: revert: Restablece el borde al valor original.
+    border: inherit: Hereda el borde del elemento padre. */
+}
+
+/* os pseudoelementos son elementos que no existen en 
+el lenguaje de marcado html, pero se crean a través de selectores css y son ::después y ::antes. */
+
+h1::before {
+  content: "►";
+  margin-right: 10px;
+}
+
+h1::after {
+  content: "despues";
+  margin-left: 10px;
+}
+
+/* Las pseudo-clases en CSS son palabras clave especiales que se 
+añaden a los selectores para aplicar estilos a un elemento 
+en función de su estado. En otras palabras, permiten modificar
+la apariencia de un elemento cuando se cumple una condición específica. */
+
+/* Cambia el color del enlace a rojo cuando el usuario pasa el ratón por encima */
+a:hover {
+  /* outline: 10px solid fuchsia; */
+  border: 10px solid fuchsia;
+}
+
+/* Cambia el color del botón a verde cuando se hace clic en él */
+button:active {
+  color: green;
+  background-color: black;
+}
+
+/* Muestra un borde alrededor del campo de formulario cuando tiene el foco */
+input:focus {
+  background-color: red;
+}
+
+/* Cambia el color del enlace a gris cuando se ha visitado */
+a:visited {
+  color: gray;
+}
+
+/* Cambia el color del primer párrafo a rojo */
+li:first-child {
+  color: red;
+}
+
+/* Cambia el color del último párrafo a verde */
+li:last-child {
+  color: green;
+}
+
+/* Cambia el color del tercer párrafo a azul */
+li:nth-child(2) {
+  color: blue;
+}
+
+/* ul li: Selecciona todos los elementos li que sean descendientes de un elemento ul. Esto significa que se seleccionarán incluso si están anidados dentro de otros elementos ul.
+ul > li: Selecciona solo los elementos li que sean hijos directos de un elemento ul. Esto significa que no se seleccionarán si están anidados dentro de otros elementos ul. */
+
+/*hijo en n Niveles*/
+div p {
+  color: blue;
+}
+
+/*hijo directos*/
+div > p {
+  color: red;
+}
+
+/*los elmentos siguientes , los span despues de p*/
+p ~ span {
+  color: purple;
+}
+
+/*justo el elmento siguiente , los span despues de div*/
+div + span {
+  color: yellow;
+}
+
+/* 
+ Explicar los estilos en cascada la sobre escritura
+*/
+
+/* https://specificity.keegan.st/ */
+
+/* !important */
+
+

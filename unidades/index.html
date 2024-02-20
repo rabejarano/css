@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <p>The font-size of this document is 16px.</p>
+
+    <div id="rem-div">
+      The font-size of this div element is 2rem, which translates to 2 x the
+      browser's font size.
+      <div>
+        The font-size of this div element is 3rem. It also shows that it does
+        not inherit from its parent element font size.
+      </div>
+    </div>
+
+    <p>
+      The rem unit sets the font-size relative to the browsers base font-size,
+      and will not inherit from its parents.
+    </p>
+
+    <div id="rem">
+      The font-size of the div element is set to 30px.
+      <span
+        >The span element inside the div element has a font-size of 0.5em, which
+        equals to 0.5x30 = 15px</span
+      >.
+    </div>
+
+    <div id="box">
+      <div id="box2"></div>
+    </div>
+
+    <div id="boxV">
+      <div id="boxV2"></div>
+    </div>
+  </body>
+</html>
